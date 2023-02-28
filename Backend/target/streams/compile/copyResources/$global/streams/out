@@ -1,0 +1,7 @@
+[debug] Copy resource mappings: 
+[debug] 	(D:\SoftwareEngineering\Sprint1\backend\conf\application.conf,D:\SoftwareEngineering\Sprint1\backend\target\scala-2.11\classes\application.conf)
+[debug] 	(D:\SoftwareEngineering\Sprint1\backend\conf\evolutions,D:\SoftwareEngineering\Sprint1\backend\target\scala-2.11\classes\evolutions)
+[debug] 	(D:\SoftwareEngineering\Sprint1\backend\conf\logback.xml,D:\SoftwareEngineering\Sprint1\backend\target\scala-2.11\classes\logback.xml)
+[debug] 	(D:\SoftwareEngineering\Sprint1\backend\conf\routes,D:\SoftwareEngineering\Sprint1\backend\target\scala-2.11\classes\routes)
+[debug] 	(D:\SoftwareEngineering\Sprint1\backend\conf\evolutions\default,D:\SoftwareEngineering\Sprint1\backend\target\scala-2.11\classes\evolutions\default)
+[debug] 	(D:\SoftwareEngineering\Sprint1\backend\conf\evolutions\default\1.sql,D:\SoftwareEngineering\Sprint1\backend\target\scala-2.11\classes\evolutions\default\1.sql)
