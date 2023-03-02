@@ -20,7 +20,7 @@
         <entry key="root">
           <value>
             <ProjectSettingsEntry>
-              <option name="sourceDir" value="$PROJECT_DIR$/app" />
+              <option name="sourceDir" value="D:\SoftwareEngineering\Sprint1\backend\app" />
               <option name="confDir" value="D:\SoftwareEngineering\Sprint1\backend\app" />
               <option name="templateImports">
                 <list>
