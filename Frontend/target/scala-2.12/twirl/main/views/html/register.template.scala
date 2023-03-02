@@ -79,21 +79,28 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
                             <div class="input-field col s12">
 
                                 <input id="title" name="title" type="text" class="validate">
-                                <label for="title">Title</label>
+                                <label for="title">Title(Mr. Mrs. etc.)</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="firstname" name="firstname" type="text" class="validate">
-                                <label for="firstname">First Name</label>
+                                <input id="researchArea" name="researchArea" type="text" class="validate">
+                                <label for="researchArea">Research Area</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="lastname" name="lastname" type="text" class="validate">
-                                <label for="lastname">Last Name</label>
+                                <input id="firstName" name="firstName" type="text" class="validate">
+                                <label for="firstName">First Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="lastName" name="lastName" type="text" class="validate">
+                                <label for="lastName">Last Name</label>
                             </div>
                         </div>
                         <div class="row">
@@ -127,6 +134,13 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
                         <div class="row">
                             <div class="input-field col s12">
 
+                                <input id="fax" name="fax" type="text" class="validate">
+                                <label for="fax">Fax</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
                                 <input id="address" name="address" type="text" class="validate">
                                 <label for="address">Address</label>
                             </div>
@@ -155,19 +169,26 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="comments" name="comments" type="text" class="validate">
-                                <label for="comments">Comments</label>
+                                <input id="comment" name="comment" type="text" class="validate">
+                                <label for="comment">Comments</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="status" name="status" type="text" class="validate">
+                                <label for="status">Status</label>
                             </div>
                         </div>
 
-                        """),_display_(/*132.26*/if(authorizeMessage!= null)/*132.53*/{_display_(Seq[Any](format.raw/*132.54*/("""
-                            """),format.raw/*133.29*/("""<div class="alert alert-primary" role="alert">
-                            """),_display_(/*134.30*/authorizeMessage),format.raw/*134.46*/("""
-                            """),format.raw/*135.29*/("""</div>
+                        """),_display_(/*153.26*/if(authorizeMessage!= null)/*153.53*/{_display_(Seq[Any](format.raw/*153.54*/("""
+                            """),format.raw/*154.29*/("""<div class="alert alert-primary" role="alert">
+                            """),_display_(/*155.30*/authorizeMessage),format.raw/*155.46*/("""
+                            """),format.raw/*156.29*/("""</div>
                             <br>
-                        """)))}),format.raw/*137.26*/("""
+                        """)))}),format.raw/*158.26*/("""
 
-                        """),format.raw/*139.25*/("""<div class="row">
+                        """),format.raw/*160.25*/("""<div class="row">
                             <button id="api-search-button" class="btn col s4 offset-s4" type="submit">Submit</button>
                         </div>
 
@@ -193,11 +214,11 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2023-03-01T22:04:09.585
+                  DATE: 2023-03-01T22:18:17.926
                   SOURCE: D:/SoftwareEngineering/Sprint1/Frontend/app/views/register.scala.html
-                  HASH: c3ce32c5e2ae165a5a0ee714df86d86ec1c1731d
-                  MATRIX: 951->1|1071->28|2659->1591|2674->1597|2726->1628|7518->6392|7555->6419|7595->6420|7653->6449|7757->6525|7795->6541|7853->6570|7950->6635|8005->6661
-                  LINES: 28->1|33->2|62->31|62->31|62->31|163->132|163->132|163->132|164->133|165->134|165->134|166->135|168->137|170->139
+                  HASH: 03cb1177d64e9c566d25757e564e9d006978ad79
+                  MATRIX: 951->1|1071->28|2659->1591|2674->1597|2726->1628|8542->7416|8579->7443|8619->7444|8677->7473|8781->7549|8819->7565|8877->7594|8974->7659|9029->7685
+                  LINES: 28->1|33->2|62->31|62->31|62->31|184->153|184->153|184->153|185->154|186->155|186->155|187->156|189->158|191->160
                   -- GENERATED --
               */
           
