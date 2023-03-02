@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:D:/SoftwareEngineering/Sprint1/Frontend/conf/routes
-// @DATE:Mon Feb 27 10:29:35 CST 2023
+// @DATE:Thu Mar 02 11:37:49 CST 2023
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -19,16 +19,6 @@ package controllers.javascript {
     }
 
   
-    // @LINE:12
-    def signupHandler: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.signupHandler",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "register"})
-        }
-      """
-    )
-  
     // @LINE:10
     def signup: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.signup",
@@ -39,12 +29,12 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:7
-    def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.index",
+    // @LINE:14
+    def forgotPassword: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.forgotPassword",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + """"})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "forgotPassword"})
         }
       """
     )
@@ -59,9 +49,29 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:12
+    def signupHandler: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.signupHandler",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "register"})
+        }
+      """
+    )
+  
+    // @LINE:7
+    def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.index",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + """"})
+        }
+      """
+    )
+  
   }
 
-  // @LINE:15
+  // @LINE:17
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -69,7 +79,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:15
+    // @LINE:17
     def at: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.at",
       """

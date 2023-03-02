@@ -40,6 +40,10 @@ public class HomeController extends Controller {
         return ok(views.html.register.render(null));
     }
 
+    public Result forgotPassword() {
+        return ok(views.html.forgotPassword.render());
+    }
+
     public CompletionStage<Result> loginHandler() {
 
         Form<User> loginForm = formFactory.form(User.class).bindFromRequest();

@@ -197,9 +197,9 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
                                 <br>
                                 <br>
                                 <select id="status" name="status" style="display: block;">
-                                    <option value="Active">Student</option>
-                                    <option value="Inactive">Faculty</option>
-                                    <option value="Inactive">Staff</option>
+                                    <option value="Student">Student</option>
+                                    <option value="Faculty">Faculty</option>
+                                    <option value="Staff">Staff</option>
                                 </select>
                             </div>
                         </div>
@@ -210,13 +210,13 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
                                 <br>
                                 <br>
                                 <select id="degree" name="degree" style="display: block;">
-                                    <option value="Active">Ph.D.</option>
-                                    <option value="Inactive">D.E.-SE</option>
-                                    <option value="Inactive">MS-CS</option>
-                                    <option value="Inactive">MS-SE</option>
-                                    <option value="Inactive">MS-Cybersecurity</option>
-                                    <option value="Inactive">BS-CS</option>
-                                    <option value="Inactive">BA-CS</option>
+                                    <option value="Ph.D.">Ph.D.</option>
+                                    <option value="D.E.-SE">D.E.-SE</option>
+                                    <option value="MS-CS">MS-CS</option>
+                                    <option value="MS-SE">MS-SE</option>
+                                    <option value="MS-Cybersecurity">MS-Cybersecurity</option>
+                                    <option value="BS-CS">BS-CS</option>
+                                    <option value="BA-CS">BA-CS</option>
                                 </select>
                             </div>
                         </div>
@@ -226,25 +226,25 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
                                 <br>
                                 <br>
                                 <select id="semester" name="semester" style="display: block;">
-                                    <option value="Active">Fall</option>
-                                    <option value="Inactive">Spring</option>
-                                    <option value="Inactive">Summer</option>
+                                    <option value="Fall">Fall</option>
+                                    <option value="Spring">Spring</option>
+                                    <option value="Summer">Summer</option>
                                 </select>
                                 <br>
                                 <br>
                                 <select id="year" name="year" style="display: block;">
-                                    <option value="Active">2019</option>
-                                    <option value="Inactive">2020</option>
-                                    <option value="Inactive">2021</option>
-                                    <option value="Inactive">2022</option>
-                                    <option value="Inactive">2023</option>
-                                    <option value="Inactive">2024</option>
-                                    <option value="Inactive">2025</option>
-                                    <option value="Inactive">2026</option>
-                                    <option value="Inactive">2027</option>
-                                    <option value="Inactive">2028</option>
-                                    <option value="Inactive">2029</option>
-                                    <option value="Inactive">2030</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
                                 </select>
                             </div>
                         </div>
@@ -254,34 +254,34 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
                                 <br>
                                 <br>
                                 <select id="month" name="month" style="display: block;">
-                                    <option value="Active">January</option>
-                                    <option value="Inactive">February</option>
-                                    <option value="Inactive">March</option>
-                                    <option value="Inactive">April</option>
-                                    <option value="Inactive">May</option>
-                                    <option value="Inactive">June</option>
-                                    <option value="Inactive">July</option>
-                                    <option value="Inactive">August</option>
-                                    <option value="Inactive">September</option>
-                                    <option value="Inactive">October</option>
-                                    <option value="Inactive">November</option>
-                                    <option value="Inactive">December</option>
+                                    <option value="January">January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                    <option value="October">October</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
                                 </select>
                                 <br>
                                 <br>
                                 <select id="year2" name="year2" style="display: block;">
-                                    <option value="Active">2019</option>
-                                    <option value="Inactive">2020</option>
-                                    <option value="Inactive">2021</option>
-                                    <option value="Inactive">2022</option>
-                                    <option value="Inactive">2023</option>
-                                    <option value="Inactive">2024</option>
-                                    <option value="Inactive">2025</option>
-                                    <option value="Inactive">2026</option>
-                                    <option value="Inactive">2027</option>
-                                    <option value="Inactive">2028</option>
-                                    <option value="Inactive">2029</option>
-                                    <option value="Inactive">2030</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
                                 </select>
                             </div>
                         </div>
@@ -318,10 +318,10 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2023-03-02T11:11:25.567
+                  DATE: 2023-03-02T11:21:19.154
                   SOURCE: D:/SoftwareEngineering/Sprint1/Frontend/app/views/register.scala.html
-                  HASH: 4b301e7cf8e6d2a977b01974afbf8cecb7fc5f33
-                  MATRIX: 951->1|1071->28|2658->1590|2673->1596|2725->1627|15097->13971|15134->13998|15174->13999|15232->14028|15336->14104|15374->14120|15432->14149|15529->14214|15584->14240
+                  HASH: 844a17b8ca5aaa8a0a5e2102b8ef333d06904d3b
+                  MATRIX: 951->1|1071->28|2658->1590|2673->1596|2725->1627|14970->13844|15007->13871|15047->13872|15105->13901|15209->13977|15247->13993|15305->14022|15402->14087|15457->14113
                   LINES: 28->1|33->2|63->32|63->32|63->32|288->257|288->257|288->257|289->258|290->259|290->259|291->260|293->262|295->264
                   -- GENERATED --
               */
