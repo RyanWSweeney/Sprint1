@@ -75,14 +75,99 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
                                 <label for="password">Password</label>
                             </div>
                         </div>
-                        """),_display_(/*47.26*/if(authorizeMessage!= null)/*47.53*/{_display_(Seq[Any](format.raw/*47.54*/("""
-                            """),format.raw/*48.29*/("""<div class="alert alert-primary" role="alert">
-                            """),_display_(/*49.30*/authorizeMessage),format.raw/*49.46*/("""
-                            """),format.raw/*50.29*/("""</div>
-                            <br>
-                        """)))}),format.raw/*52.26*/("""
+                        <div class="row">
+                            <div class="input-field col s12">
 
-                        """),format.raw/*54.25*/("""<div class="row">
+                                <input id="title" name="title" type="text" class="validate">
+                                <label for="title">Title</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="firstname" name="firstname" type="text" class="validate">
+                                <label for="firstname">First Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="lastname" name="lastname" type="text" class="validate">
+                                <label for="lastname">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="position" name="position" type="text" class="validate">
+                                <label for="position">Position</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="affiliation" name="affiliation" type="text" class="validate">
+                                <label for="affiliation">Affiliation</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="email" name="email" type="text" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="phone" name="phone" type="text" class="validate">
+                                <label for="phone">Phone</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="address" name="address" type="text" class="validate">
+                                <label for="address">Address</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="city" name="city" type="text" class="validate">
+                                <label for="city">City</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="country" name="country" type="text" class="validate">
+                                <label for="country">Country</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="zip" name="zip" type="text" class="validate">
+                                <label for="zip">Zip Code</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="comments" name="comments" type="text" class="validate">
+                                <label for="comments">Comments</label>
+                            </div>
+                        </div>
+
+                        """),_display_(/*132.26*/if(authorizeMessage!= null)/*132.53*/{_display_(Seq[Any](format.raw/*132.54*/("""
+                            """),format.raw/*133.29*/("""<div class="alert alert-primary" role="alert">
+                            """),_display_(/*134.30*/authorizeMessage),format.raw/*134.46*/("""
+                            """),format.raw/*135.29*/("""</div>
+                            <br>
+                        """)))}),format.raw/*137.26*/("""
+
+                        """),format.raw/*139.25*/("""<div class="row">
                             <button id="api-search-button" class="btn col s4 offset-s4" type="submit">Submit</button>
                         </div>
 
@@ -108,11 +193,11 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2023-02-27T10:29:35.647
+                  DATE: 2023-03-01T22:04:09.585
                   SOURCE: D:/SoftwareEngineering/Sprint1/Frontend/app/views/register.scala.html
-                  HASH: 21084405952337d1dab47a06d6b9e9c7674f3466
-                  MATRIX: 951->1|1071->28|2659->1591|2674->1597|2726->1628|3481->2356|3517->2383|3556->2384|3613->2413|3716->2489|3753->2505|3810->2534|3906->2599|3960->2625
-                  LINES: 28->1|33->2|62->31|62->31|62->31|78->47|78->47|78->47|79->48|80->49|80->49|81->50|83->52|85->54
+                  HASH: c3ce32c5e2ae165a5a0ee714df86d86ec1c1731d
+                  MATRIX: 951->1|1071->28|2659->1591|2674->1597|2726->1628|7518->6392|7555->6419|7595->6420|7653->6449|7757->6525|7795->6541|7853->6570|7950->6635|8005->6661
+                  LINES: 28->1|33->2|62->31|62->31|62->31|163->132|163->132|163->132|164->133|165->134|165->134|166->135|168->137|170->139
                   -- GENERATED --
               */
           

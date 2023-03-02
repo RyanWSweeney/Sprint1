@@ -12,8 +12,23 @@ import java.util.concurrent.CompletionStage;
 public class User {
 
     private String username;
-
     private String password;
+    private String title;
+    private String researchArea;
+    private String firstName;
+    private String lastName;
+    private String position;
+    private String affiliation;
+    private String email;
+    private String phone;
+    private String fax;
+    private String address;
+    private String city;
+    private String zip;
+    private String country;
+    private String comment;
+    private String status;
+
 
     public String getUsername() {
         return username;
@@ -31,6 +46,125 @@ public class User {
         this.password = password;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getResearchArea() {
+        return researchArea;
+    }
+
+    public void setResearchArea(String researchArea) {
+        this.researchArea = researchArea;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getPosition() {
+        return position;
+    }
+
+    public void setPosition(String position) {
+        this.position = position;
+    }
+
+    public String getAffiliation() {
+        return affiliation;
+    }
+
+    public void setAffiliation(String affiliation) {
+        this.affiliation = affiliation;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getFax() {
+        return fax;
+    }
+
+    public void setFax(String fax) {
+        this.fax = fax;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getZip() {
+        return zip;
+    }
+
+    public void setZip(String zip) {
+        this.zip = zip;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getComment() {
+        return comment;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
     public CompletionStage<WSResponse> checkAuthorized() {
 
@@ -56,9 +190,39 @@ public class User {
         ObjectNode res = Json.newObject();
         res.put("username", this.username);
         res.put("password",this.password);
+        res.put("title",this.title);
+        res.put("researchArea",this.researchArea);
+        res.put("firstName",this.firstName);
+        res.put("lastName",this.lastName);
+        res.put("position",this.position);
+        res.put("affiliation",this.affiliation);
+        res.put("email",this.email);
+        res.put("phone",this.phone);
+        res.put("fax",this.fax);
+        res.put("address",this.address);
+        res.put("city",this.city);
+        res.put("zip",this.zip);
+        res.put("country",this.country);
+        res.put("comment",this.comment);
+        res.put("status",this.status);
 
         System.out.println(username);
         System.out.println(password);
+        System.out.println(title);
+        System.out.println(researchArea);
+        System.out.println(firstName);
+        System.out.println(lastName);
+        System.out.println(position);
+        System.out.println(affiliation);
+        System.out.println(email);
+        System.out.println(phone);
+        System.out.println(fax);
+        System.out.println(address);
+        System.out.println(city);
+        System.out.println(zip);
+        System.out.println(country);
+        System.out.println(comment);
+        System.out.println(status);
 
         WSRequest request = ws.url("http://localhost:9005/signup");
         return request.addHeader("Content-Type", "application/json")

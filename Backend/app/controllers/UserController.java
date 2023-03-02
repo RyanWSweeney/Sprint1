@@ -23,6 +23,7 @@ public class UserController extends Controller {
         String username = req.get("username").asText();
         String password = req.get("password").asText();
 
+
         try {
             User user = User.findByName(username); // ( match where username and password both match )
             if(user!=null && username.equals(user.username) && password.equals(user.password)){
@@ -49,6 +50,21 @@ public class UserController extends Controller {
         JsonNode req = request().body().asJson();
         String username = req.get("username").asText();
         String password = req.get("password").asText();
+        String title = req.get("title").asText();
+        String researchArea = req.get("researchArea").asText();
+        String firstName = req.get("firstName").asText();
+        String lastName = req.get("lastName").asText();
+        String position = req.get("position").asText();
+        String affiliation = req.get("affiliation").asText();
+        String email = req.get("email").asText();
+        String phone = req.get("phone").asText();
+        String fax = req.get("fax").asText();
+        String address = req.get("address").asText();
+        String city = req.get("city").asText();
+        String zip = req.get("zip").asText();
+        String country = req.get("country").asText();
+        String comment = req.get("comment").asText();
+        String status = req.get("status").asText();
 
         User u = User.findByName(username);
         ObjectNode result = null;
@@ -58,6 +74,21 @@ public class UserController extends Controller {
             User user = new User();
             user.username=username;
             user.password=password;
+            user.Title=title;
+            user.researchArea=researchArea;
+            user.firstName=firstName;
+            user.lastName=lastName;
+            user.position=position;
+            user.affiliation=affiliation;
+            user.email=email;
+            user.phone=phone;
+            user.fax=fax;
+            user.address=address;
+            user.city=city;
+            user.zip=zip;
+            user.country=country;
+            user.comments=comment;
+            user.status=status;
             user.save();
             result.put("body", username);
         }
