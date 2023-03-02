@@ -20,9 +20,10 @@
         <header class="topbar">
             <h1 class="focused" style="font-size: 37px;
                 color: #57a957">
-                <strong>Play Setup Demo</strong>
+                <strong>Register User</strong>
             </h1>
         </header>
+
 
 
         <div class="row">
@@ -46,16 +47,26 @@
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-
-                                <input id="security" name="security" type="password" class="validate">
                                 <label for="security">Security Question: What was the name of your first pet?</label>
+                                <br>
+                                <input id="security" name="security" type="password" class="validate">
+
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="title" name="title" type="text" class="validate">
-                                <label for="title">Title(Mr. Mrs. etc.)</label>
+                                <label for="title">Title</label>
+                                <br>
+                                <br>
+                                <select id="title" name="title" style="display: block;">
+                                    <option value="Mr.">Mr.</option>
+                                    <option value="Mrs.">Mrs.</option>
+                                    <option value="Ms.">Ms.</option>
+                                    <option value="Dr.">Dr.</option>
+                                    <option value="Prof.">Prof.</option>
+                                </select>
+
                             </div>
                         </div>
                         <div class="row">
@@ -151,12 +162,98 @@
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-
-                                <input id="status" name="status" type="text" class="validate">
                                 <label for="status">Status</label>
+                                <br>
+                                <br>
+                                <select id="status" name="status" style="display: block;">
+                                    <option value="Student">Student</option>
+                                    <option value="Faculty">Faculty</option>
+                                    <option value="Staff">Staff</option>
+                                </select>
                             </div>
                         </div>
-
+                        <div>If student answer the following questions</div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <label for="degree">Current Degree Plan</label>
+                                <br>
+                                <br>
+                                <select id="degree" name="degree" style="display: block;">
+                                    <option value="Ph.D.">Ph.D.</option>
+                                    <option value="D.E.-SE">D.E.-SE</option>
+                                    <option value="MS-CS">MS-CS</option>
+                                    <option value="MS-SE">MS-SE</option>
+                                    <option value="MS-Cybersecurity">MS-Cybersecurity</option>
+                                    <option value="BS-CS">BS-CS</option>
+                                    <option value="BA-CS">BA-CS</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <label for="semester">Starting Semester</label>
+                                <br>
+                                <br>
+                                <select id="semester" name="semester" style="display: block;">
+                                    <option value="Fall">Fall</option>
+                                    <option value="Spring">Spring</option>
+                                    <option value="Summer">Summer</option>
+                                </select>
+                                <br>
+                                <br>
+                                <select id="year" name="year" style="display: block;">
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <label for="month">Graduation</label>
+                                <br>
+                                <br>
+                                <select id="month" name="month" style="display: block;">
+                                    <option value="January">January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                    <option value="October">October</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
+                                </select>
+                                <br>
+                                <br>
+                                <select id="year2" name="year2" style="display: block;">
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                </select>
+                            </div>
+                        </div>
                         @if(authorizeMessage!= null){
                             <div class="alert alert-primary" role="alert">
                             @authorizeMessage

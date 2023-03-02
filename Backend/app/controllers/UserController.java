@@ -50,6 +50,7 @@ public class UserController extends Controller {
         JsonNode req = request().body().asJson();
         String username = req.get("username").asText();
         String password = req.get("password").asText();
+        String security = req.get("security").asText();
         String title = req.get("title").asText();
         String researchArea = req.get("researchArea").asText();
         String firstName = req.get("firstName").asText();
@@ -65,6 +66,11 @@ public class UserController extends Controller {
         String country = req.get("country").asText();
         String comment = req.get("comment").asText();
         String status = req.get("status").asText();
+        String degree = req.get("degree").asText();
+        String semester = req.get("semester").asText();
+        String year = req.get("year").asText();
+        String month = req.get("month").asText();
+        String year2 = req.get("year2").asText();
 
         User u = User.findByName(username);
         ObjectNode result = null;
@@ -74,6 +80,7 @@ public class UserController extends Controller {
             User user = new User();
             user.username=username;
             user.password=password;
+            user.security=security;
             user.Title=title;
             user.researchArea=researchArea;
             user.firstName=firstName;
@@ -89,6 +96,13 @@ public class UserController extends Controller {
             user.country=country;
             user.comments=comment;
             user.status=status;
+            user.degree=degree;
+            user.semester=semester;
+            user.year=year;
+            user.month=month;
+            user.year2=year2;
+
+
             user.save();
             result.put("body", username);
         }

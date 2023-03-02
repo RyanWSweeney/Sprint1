@@ -29,6 +29,18 @@ public class User {
     private String comment;
     private String status;
 
+    private String degree;
+
+    private String semester;
+
+    private String year;
+
+    private String month;
+
+    private String year2;
+
+    private String security;
+
 
     public String getUsername() {
         return username;
@@ -166,6 +178,54 @@ public class User {
         this.status = status;
     }
 
+    public String getDegree() {
+        return degree;
+    }
+
+    public void setDegree(String degree) {
+        this.degree = degree;
+    }
+
+    public String getSemester() {
+        return semester;
+    }
+
+    public void setSemester(String semester) {
+        this.semester = semester;
+    }
+
+    public String getYear() {
+        return year;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
+    }
+
+    public String getMonth() {
+        return month;
+    }
+
+    public void setMonth(String month) {
+        this.month = month;
+    }
+
+    public String getYear2() {
+        return year2;
+    }
+
+    public void setYear2(String year2) {
+        this.year2 = year2;
+    }
+
+    public String getSecurity() {
+        return security;
+    }
+
+    public void setSecurity(String security) {
+        this.security = security;
+    }
+
     public CompletionStage<WSResponse> checkAuthorized() {
 
         WSClient ws = play.test.WSTestClient.newClient(9005);
@@ -205,9 +265,17 @@ public class User {
         res.put("country",this.country);
         res.put("comment",this.comment);
         res.put("status",this.status);
+        res.put("degree",this.degree);
+        res.put("semester",this.semester);
+        res.put("year",this.year);
+        res.put("month",this.month);
+        res.put("year2",this.year2);
+        res.put("security",this.security);
+
 
         System.out.println(username);
         System.out.println(password);
+        System.out.println(security);
         System.out.println(title);
         System.out.println(researchArea);
         System.out.println(firstName);
@@ -223,6 +291,11 @@ public class User {
         System.out.println(country);
         System.out.println(comment);
         System.out.println(status);
+        System.out.println(degree);
+        System.out.println(semester);
+        System.out.println(year);
+        System.out.println(month);
+        System.out.println(year2);
 
         WSRequest request = ws.url("http://localhost:9005/signup");
         return request.addHeader("Content-Type", "application/json")
