@@ -20,41 +20,67 @@
         <header class="topbar">
             <h1 class="focused" style="font-size: 37px;
                 color: #57a957">
-                <strong>Play Setup Demo</strong>
+                <strong>Register User</strong>
             </h1>
         </header>
+
 
 
         <div class="row">
             <div class="card col s4 offset-s4 ">
                 <div class="card-panel">
-                    <form action="@routes.HomeController.loginHandler()" method="GET">
+                    <form action="@routes.User.application()" method="GET">
 
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="username" name="username" type="text" class="validate">
+                                <input id="username" name="username" type="text" class="validate" required>
                                 <label for="username">Username</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="password" name="password" type="password" class="validate">
+                                <input id="password" name="password" type="password" class="validate" required>
                                 <label for="password">Password</label>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <label for="security">Security Question: What was the name of your first pet?</label>
+                                <br>
+                                <input id="security" name="security" type="password" class="validate" required>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <label for="title">Title</label>
+                                <br>
+                                <br>
+                                <select id="title" name="title" style="display: block;">
+                                    <option value="Mr.">Mr.</option>
+                                    <option value="Mrs.">Mrs.</option>
+                                    <option value="Ms.">Ms.</option>
+                                    <option value="Dr.">Dr.</option>
+                                    <option value="Prof.">Prof.</option>
+                                </select>
+
+                            </div>
+                        </div>
+
                         @if(authorizeMessage!= null){
                             <div class="alert alert-primary" role="alert">
                             @authorizeMessage
                             </div>
                             <br>
                         }
-                        <a href="@routes.HomeController.forgotPassword()">Forgot Password?</a>
+
                         <div class="row">
                             <button id="api-search-button" class="btn col s4 offset-s4" type="submit">Submit</button>
                         </div>
-                        <a href="@routes.HomeController.signup()">REGISTER</a>
+
                     </form>
                 </div>
             </div>

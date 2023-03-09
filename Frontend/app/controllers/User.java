@@ -5,8 +5,11 @@ import play.libs.Json;
 import play.libs.ws.WSClient;
 import play.libs.ws.WSRequest;
 import play.libs.ws.WSResponse;
+import play.mvc.Result;
 
 import java.util.concurrent.CompletionStage;
+
+import static play.mvc.Results.ok;
 
 
 public class User {
@@ -303,6 +306,14 @@ public class User {
                 .thenApply((WSResponse r) -> {
                     return r;
                 });
+    }
+
+    public Result application() {
+        return ok(views.html.application.render(""));
+    }
+
+    public Result edit() {
+        return ok(views.html.application.render(""));
     }
 
 }

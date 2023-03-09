@@ -16,6 +16,24 @@ import play.mvc.Result;
 
 public class UserController extends Controller {
 
+    public Result forgotPassword() {
+        System.out.println("In forgotPassword");
+        JsonNode req = request().body().asJson();
+        String username = req.get("username").asText();
+        String security = req.get("security").asText();
+        try {
+            User user = User.findByName(username); // ( match where username and password both match )
+            if(user!=null && username.equals(user.username) && security.equals(user.security)){
+                return ok("true");
+            }else{
+                return ok("false");
+            }
+        }
+        catch (Exception e) {
+            return ok("false");
+        }
+    }
+
     public Result authenticate() {
 
         System.out.println("In authenticate");
