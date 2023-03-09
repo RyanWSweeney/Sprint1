@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:D:/SoftwareEngineering/Sprint1/backend/conf/routes
-// @DATE:Mon Feb 27 10:24:30 CST 2023
+// @DATE:Thu Mar 09 11:13:22 CST 2023
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -42,6 +42,16 @@ package controllers.javascript {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
+  
+    // @LINE:15
+    def forgotPassword: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UserController.forgotPassword",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "forgotPassword"})
+        }
+      """
+    )
   
     // @LINE:9
     def authenticate: JavaScriptReverseRoute = JavaScriptReverseRoute(

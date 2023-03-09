@@ -81,10 +81,11 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
                             """),format.raw/*50.29*/("""</div>
                             <br>
                         """)))}),format.raw/*52.26*/("""
-                        """),format.raw/*53.25*/("""<div class="row">
+                        """),format.raw/*53.25*/("""<a href=""""),_display_(/*53.35*/routes/*53.41*/.HomeController.forgotPassword()),format.raw/*53.73*/("""">Forgot Password?</a>
+                        <div class="row">
                             <button id="api-search-button" class="btn col s4 offset-s4" type="submit">Submit</button>
                         </div>
-                        <a href=""""),_display_(/*56.35*/routes/*56.41*/.HomeController.signup()),format.raw/*56.65*/("""">REGISTER</a>
+                        <a href=""""),_display_(/*57.35*/routes/*57.41*/.HomeController.signup()),format.raw/*57.65*/("""">REGISTER</a>
                     </form>
                 </div>
             </div>
@@ -107,11 +108,11 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2023-02-27T10:29:35.636
+                  DATE: 2023-03-09T09:37:13.828
                   SOURCE: D:/SoftwareEngineering/Sprint1/Frontend/app/views/login.scala.html
-                  HASH: 35dca9e6949486fa9ac000f0cb94ff87b88db485
-                  MATRIX: 948->1|1068->28|2656->1591|2671->1597|2722->1627|3477->2355|3513->2382|3552->2383|3609->2412|3712->2488|3749->2504|3806->2533|3902->2598|3955->2623|4183->2824|4198->2830|4243->2854
-                  LINES: 28->1|33->2|62->31|62->31|62->31|78->47|78->47|78->47|79->48|80->49|80->49|81->50|83->52|84->53|87->56|87->56|87->56
+                  HASH: b7dc21f991481c023acf079615f4b80b61289ca6
+                  MATRIX: 948->1|1068->28|2656->1591|2671->1597|2722->1627|3477->2355|3513->2382|3552->2383|3609->2412|3712->2488|3749->2504|3806->2533|3902->2598|3955->2623|3992->2633|4007->2639|4060->2671|4335->2919|4350->2925|4395->2949
+                  LINES: 28->1|33->2|62->31|62->31|62->31|78->47|78->47|78->47|79->48|80->49|80->49|81->50|83->52|84->53|84->53|84->53|84->53|88->57|88->57|88->57
                   -- GENERATED --
               */
           

@@ -65,14 +65,14 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="username" name="username" type="text" class="validate">
+                                <input id="username" name="username" type="text" class="validate" required>
                                 <label for="username">Username</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="password" name="password" type="password" class="validate">
+                                <input id="password" name="password" type="password" class="validate" required>
                                 <label for="password">Password</label>
                             </div>
                         </div>
@@ -80,7 +80,7 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
                             <div class="input-field col s12">
                                 <label for="security">Security Question: What was the name of your first pet?</label>
                                 <br>
-                                <input id="security" name="security" type="password" class="validate">
+                                <input id="security" name="security" type="password" class="validate" required>
 
                             </div>
                         </div>
@@ -110,14 +110,14 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="firstName" name="firstName" type="text" class="validate">
+                                <input id="firstName" name="firstName" type="text" class="validate" required>
                                 <label for="firstName">First Name</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="lastName" name="lastName" type="text" class="validate">
+                                <input id="lastName" name="lastName" type="text" class="validate" required>
                                 <label for="lastName">Last Name</label>
                             </div>
                         </div>
@@ -138,14 +138,14 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="email" name="email" type="text" class="validate">
+                                <input id="email" name="email" type="text" class="validate" required>
                                 <label for="email">Email</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="phone" name="phone" type="text" class="validate">
+                                <input id="phone" name="phone" type="text" class="validate" required>
                                 <label for="phone">Phone</label>
                             </div>
                         </div>
@@ -159,35 +159,35 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="address" name="address" type="text" class="validate">
+                                <input id="address" name="address" type="text" class="validate" required>
                                 <label for="address">Address</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="city" name="city" type="text" class="validate">
+                                <input id="city" name="city" type="text" class="validate" required>
                                 <label for="city">City</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="country" name="country" type="text" class="validate">
+                                <input id="country" name="country" type="text" class="validate" required>
                                 <label for="country">Country</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="zip" name="zip" type="text" class="validate">
+                                <input id="zip" name="zip" type="text" class="validate" required>
                                 <label for="zip">Zip Code</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="comment" name="comment" type="text" class="validate">
+                                <input id="comment" name="comment" type="text" class="validate" required>
                                 <label for="comment">Comments</label>
                             </div>
                         </div>
@@ -318,10 +318,10 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2023-03-02T11:21:19.154
+                  DATE: 2023-03-09T10:06:36.325
                   SOURCE: D:/SoftwareEngineering/Sprint1/Frontend/app/views/register.scala.html
-                  HASH: 844a17b8ca5aaa8a0a5e2102b8ef333d06904d3b
-                  MATRIX: 951->1|1071->28|2658->1590|2673->1596|2725->1627|14970->13844|15007->13871|15047->13872|15105->13901|15209->13977|15247->13993|15305->14022|15402->14087|15457->14113
+                  HASH: 8615c3205315afbb82b61976e7c15b44c7d2f020
+                  MATRIX: 951->1|1071->28|2658->1590|2673->1596|2725->1627|15078->13952|15115->13979|15155->13980|15213->14009|15317->14085|15355->14101|15413->14130|15510->14195|15565->14221
                   LINES: 28->1|33->2|63->32|63->32|63->32|288->257|288->257|288->257|289->258|290->259|290->259|291->260|293->262|295->264
                   -- GENERATED --
               */

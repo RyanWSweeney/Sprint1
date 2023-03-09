@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:D:/SoftwareEngineering/Sprint1/backend/conf/routes
-// @DATE:Mon Feb 27 10:24:30 CST 2023
+// @DATE:Thu Mar 09 11:13:22 CST 2023
 
 package router
 
@@ -46,6 +46,7 @@ class Routes(
     ("""GET""", this.prefix, """controllers.HomeController.index"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.UserController.authenticate()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signup""", """controllers.UserController.registerNew()"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """forgotPassword""", """controllers.UserController.forgotPassword()"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
@@ -104,6 +105,23 @@ class Routes(
     )
   )
 
+  // @LINE:15
+  private[this] lazy val controllers_UserController_forgotPassword3_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("forgotPassword")))
+  )
+  private[this] lazy val controllers_UserController_forgotPassword3_invoker = createInvoker(
+    UserController_1.forgotPassword(),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.UserController",
+      "forgotPassword",
+      Nil,
+      "POST",
+      """""",
+      this.prefix + """forgotPassword"""
+    )
+  )
+
 
   def routes: PartialFunction[RequestHeader, Handler] = {
   
@@ -123,6 +141,12 @@ class Routes(
     case controllers_UserController_registerNew2_route(params) =>
       call { 
         controllers_UserController_registerNew2_invoker.call(UserController_1.registerNew())
+      }
+  
+    // @LINE:15
+    case controllers_UserController_forgotPassword3_route(params) =>
+      call { 
+        controllers_UserController_forgotPassword3_invoker.call(UserController_1.forgotPassword())
       }
   }
 }

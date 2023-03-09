@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:D:/SoftwareEngineering/Sprint1/backend/conf/routes
-// @DATE:Mon Feb 27 10:24:30 CST 2023
+// @DATE:Thu Mar 09 11:13:22 CST 2023
 
 
 package router {

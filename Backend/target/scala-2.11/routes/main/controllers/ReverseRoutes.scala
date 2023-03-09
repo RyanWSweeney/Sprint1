@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:D:/SoftwareEngineering/Sprint1/backend/conf/routes
-// @DATE:Mon Feb 27 10:24:30 CST 2023
+// @DATE:Thu Mar 09 11:13:22 CST 2023
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -34,6 +34,12 @@ package controllers {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
+  
+    // @LINE:15
+    def forgotPassword(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "forgotPassword")
+    }
   
     // @LINE:9
     def authenticate(): Call = {

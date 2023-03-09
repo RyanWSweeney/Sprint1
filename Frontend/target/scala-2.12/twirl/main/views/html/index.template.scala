@@ -33,6 +33,9 @@ object index extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Html
 
 Seq[Any](format.raw/*2.1*/("""    """),format.raw/*3.1*/("""<!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    </head>
     <body>
 
         <header class="topbar">
@@ -41,9 +44,18 @@ Seq[Any](format.raw/*2.1*/("""    """),format.raw/*3.1*/("""<!DOCTYPE html>
                 <strong>Login Message</strong>
             </h1>
             <p class="focused" style="font-size: 20px;
-                color: #3F51B5">"""),_display_(/*13.34*/message),format.raw/*13.41*/("""</p>
+                color: #3F51B5">"""),_display_(/*16.34*/message),format.raw/*16.41*/("""</p>
 
         </header>
+
+        <div class="row">
+            <div class="card col s4 offset-s4">
+                <div class="card-panel">
+                    <a href=""""),_display_(/*23.31*/routes/*23.37*/.User.application()),format.raw/*23.56*/("""">Submit a TA Application</a>
+                    <a href=""""),_display_(/*24.31*/routes/*24.37*/.User.edit()),format.raw/*24.49*/("""">Edit User Details</a>
+                </div>
+            </div>
+        </div>
 
     </body>
 </html>
@@ -63,11 +75,11 @@ Seq[Any](format.raw/*2.1*/("""    """),format.raw/*3.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2023-02-27T10:29:35.619
+                  DATE: 2023-03-09T11:25:57.068
                   SOURCE: D:/SoftwareEngineering/Sprint1/Frontend/app/views/index.scala.html
-                  HASH: 11f3681c379e97c31ea7f186c6f828467a6dffd2
-                  MATRIX: 948->1|1038->24|1104->19|1134->62|1470->371|1498->378
-                  LINES: 28->1|31->2|34->2|34->3|44->13|44->13
+                  HASH: 8572e86896f2a3177b620693cd989c66ce1787f8
+                  MATRIX: 948->1|1038->24|1104->19|1134->62|1705->607|1733->614|1930->784|1945->790|1985->809|2072->869|2087->875|2120->887
+                  LINES: 28->1|31->2|34->2|34->3|47->16|47->16|54->23|54->23|54->23|55->24|55->24|55->24
                   -- GENERATED --
               */
           
