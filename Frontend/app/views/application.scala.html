@@ -1,4 +1,4 @@
-@(authorizeMessage: String)
+@(authorizeMessage: String, user: User)
 <!DOCTYPE html>
 <html>
     <head>
@@ -29,68 +29,67 @@
         <div class="row">
             <div class="card col s4 offset-s4 ">
                 <div class="card-panel">
-                    <form action="@routes.User.application()" method="GET">
+                    @helper.form(action=routes.HomeController.application(), Symbol("enctype") -> "multipart/form-data"){
 
                         <div class="row">
                             <div class="input-field col s12">
-
-                                <input id="firstName" name="firstName" type="text" class="validate" required readonly>
+                                <input id="firstName" name="firstName" type="text" class="validate"  required readonly value="@user.getFirstName">
                                 <label for="firstName">First Name</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="lastName" name="lastName" type="text" class="validate" required readonly>
+                                <input id="lastName" name="lastName" type="text" class="validate" value="@user.getLastName" required readonly>
                                 <label for="lastName">Last Name</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="email" name="email" type="text" class="validate" required readonly>
+                                <input id="email" name="email" type="text" class="validate" value="@user.getEmail" required readonly>
                                 <label for="email">Email</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="phone" name="phone" type="text" class="validate" required readonly>
+                                <input id="phone" name="phone" type="text" class="validate" value="@user.getPhone" required readonly>
                                 <label for="phone">Phone</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="degree" name="degree" type="text" class="validate" required readonly>
+                                <input id="degree" name="degree" type="text" class="validate" value="@user.getDegree" required readonly>
                                 <label for="degree">Degree</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="semester" name="semester" type="text" class="validate" required readonly>
+                                <input id="semester" name="semester" type="text" class="validate" value="@user.getSemester" required readonly>
                                 <label for="semester">Starting Semester</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="year" name="year" type="text" class="validate" required readonly>
+                                <input id="year" name="year" type="text" class="validate" value="@user.getYear" required readonly>
                                 <label for="year">Starting Year</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="month" name="month" type="text" class="validate" required readonly>
+                                <input id="month" name="month" type="text" class="validate" value="@user.getMonth" required readonly>
                                 <label for="month">Graduation Month</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="year2" name="year2" type="text" class="validate" required readonly>
+                                <input id="year2" name="year2" type="text" class="validate" value="@user.getYear2" required readonly>
                                 <label for="year2">Graduation Year</label>
                             </div>
                         </div>
@@ -106,6 +105,16 @@
                                 </select>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <p>
+                                    <label>
+                                        <span>Upload Resume</span>
+                                    </label>
+                                </p>
+                                <input type="file" accept="pdf" name="resume">
+                            </div>
+
 
 
                         @if(authorizeMessage!= null){
@@ -119,9 +128,12 @@
                             <button id="api-search-button" class="btn col s4 offset-s4" type="submit">Submit</button>
                         </div>
 
-                    </form>
+
+
+                    }
                 </div>
             </div>
+        </div>
         </div>
     </body>
 </html>

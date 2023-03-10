@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:D:/SoftwareEngineering/Sprint1/Frontend/conf/routes
-// @DATE:Thu Mar 09 11:25:56 CST 2023
+// @DATE:Fri Mar 10 13:05:28 CST 2023
 
 package router
 
@@ -16,7 +16,7 @@ class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:7
   HomeController_2: controllers.HomeController,
-  // @LINE:16
+  // @LINE:18
   User_0: controllers.User,
   // @LINE:21
   Assets_1: controllers.Assets,
@@ -27,7 +27,7 @@ class Routes(
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:7
     HomeController_2: controllers.HomeController,
-    // @LINE:16
+    // @LINE:18
     User_0: controllers.User,
     // @LINE:21
     Assets_1: controllers.Assets
@@ -49,7 +49,7 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signup""", """controllers.HomeController.signup()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """register""", """controllers.HomeController.signupHandler()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """forgotPassword""", """controllers.HomeController.forgotPassword()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """application""", """controllers.User.application()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """application""", """controllers.HomeController.application()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """edit""", """controllers.User.edit()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.at(path:String = "/public", file:String)"""),
     Nil
@@ -150,14 +150,14 @@ class Routes(
   )
 
   // @LINE:16
-  private[this] lazy val controllers_User_application5_route = Route("GET",
+  private[this] lazy val controllers_HomeController_application5_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("application")))
   )
-  private[this] lazy val controllers_User_application5_invoker = createInvoker(
-    User_0.application(),
+  private[this] lazy val controllers_HomeController_application5_invoker = createInvoker(
+    HomeController_2.application(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
-      "controllers.User",
+      "controllers.HomeController",
       "application",
       Nil,
       "GET",
@@ -237,9 +237,9 @@ class Routes(
       }
   
     // @LINE:16
-    case controllers_User_application5_route(params@_) =>
+    case controllers_HomeController_application5_route(params@_) =>
       call { 
-        controllers_User_application5_invoker.call(User_0.application())
+        controllers_HomeController_application5_invoker.call(HomeController_2.application())
       }
   
     // @LINE:18

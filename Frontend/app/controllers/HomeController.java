@@ -15,7 +15,7 @@ import java.util.concurrent.CompletionStage;
  * Software Service Market Place
  */
 public class HomeController extends Controller {
-
+    User user = new User();
     @Inject
     HttpExecutionContext ec;
 
@@ -53,11 +53,13 @@ public class HomeController extends Controller {
 
         return loginForm.get().checkAuthorized()
                 .thenApplyAsync((WSResponse r) -> {
-                    if (r.getStatus() == 200 && r.asJson() != null && r.asJson().asBoolean()) {
+                    if (r.getStatus() == 200 && r.asJson() != null) {
                         System.out.println(r.asJson());
+                        this.user.deserialize(r.asJson());
                         // add username to session
                         session("username", loginForm.get().getUsername());   // store username in session for your project
                         // redirect to index page, to display all categories
+//                        return redirect(view.)
                         return ok(views.html.index.render("Welcome!!! " + loginForm.get().getUsername()));
                     } else {
                         System.out.println("response null");
@@ -86,4 +88,11 @@ public class HomeController extends Controller {
                 }, ec.current());
 
     }
-}
+
+    public Result application() {
+        return ok(views.html.application.render("", this.user));
+    }
+
+
+
+    }

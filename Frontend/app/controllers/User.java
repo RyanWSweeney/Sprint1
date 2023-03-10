@@ -1,5 +1,6 @@
 package controllers;
 
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import play.libs.Json;
 import play.libs.ws.WSClient;
@@ -318,12 +319,37 @@ public class User {
                 });
     }
 
-    public Result application() {
-        return ok(views.html.application.render(""));
-    }
+
 
     public Result edit() {
         return ok(views.html.edit.render(""));
+    }
+
+    public void deserialize(JsonNode node){
+        this.username = node.get("username").asText();
+        this.password = node.get("password").asText();
+        this.title = node.get("title").asText();
+        this.researchArea = node.get("researchArea").asText();
+        this.firstName = node.get("firstName").asText();
+        System.out.println(firstName);
+        this.lastName = node.get("lastName").asText();
+        this.position = node.get("position").asText();
+        this.affiliation = node.get("affiliation").asText();
+        this.email = node.get("email").asText();
+        this.phone = node.get("phone").asText();
+        this.fax = node.get("fax").asText();
+        this.address = node.get("address").asText();
+        this.city = node.get("city").asText();
+        this.zip = node.get("zip").asText();
+        this.country = node.get("country").asText();
+        this.comment = node.get("comment").asText();
+        this.status = node.get("status").asText();
+        this.degree = node.get("degree").asText();
+        this.semester = node.get("semester").asText();
+        this.year = node.get("year").asText();
+        this.month = node.get("month").asText();
+        this.year2 = node.get("year2").asText();
+        this.security = node.get("security").asText();
     }
 
 }

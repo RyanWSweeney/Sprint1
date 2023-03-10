@@ -13,7 +13,7 @@ GET     /register                   controllers.HomeController.signupHandler()
 
 GET     /forgotPassword             controllers.HomeController.forgotPassword()
 
-GET     /application                controllers.User.application()
+GET   /application                  controllers.HomeController.application()
 
 GET     /edit                       controllers.User.edit()
 
