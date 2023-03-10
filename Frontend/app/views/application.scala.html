@@ -20,7 +20,7 @@
         <header class="topbar">
             <h1 class="focused" style="font-size: 37px;
                 color: #57a957">
-                <strong>Register User</strong>
+                <strong>TA Application</strong>
             </h1>
         </header>
 
@@ -34,41 +34,79 @@
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="username" name="username" type="text" class="validate" required>
-                                <label for="username">Username</label>
+                                <input id="firstName" name="firstName" type="text" class="validate" required readonly>
+                                <label for="firstName">First Name</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="password" name="password" type="password" class="validate" required>
-                                <label for="password">Password</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <label for="security">Security Question: What was the name of your first pet?</label>
-                                <br>
-                                <input id="security" name="security" type="password" class="validate" required>
-
+                                <input id="lastName" name="lastName" type="text" class="validate" required readonly>
+                                <label for="lastName">Last Name</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <label for="title">Title</label>
+                                <input id="email" name="email" type="text" class="validate" required readonly>
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="phone" name="phone" type="text" class="validate" required readonly>
+                                <label for="phone">Phone</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="degree" name="degree" type="text" class="validate" required readonly>
+                                <label for="degree">Degree</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="semester" name="semester" type="text" class="validate" required readonly>
+                                <label for="semester">Starting Semester</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="year" name="year" type="text" class="validate" required readonly>
+                                <label for="year">Starting Year</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="month" name="month" type="text" class="validate" required readonly>
+                                <label for="month">Graduation Month</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="year2" name="year2" type="text" class="validate" required readonly>
+                                <label for="year2">Graduation Year</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <label for="courses">Courses Completed</label>
                                 <br>
                                 <br>
-                                <select id="title" name="title" style="display: block;">
-                                    <option value="Mr.">Mr.</option>
-                                    <option value="Mrs.">Mrs.</option>
-                                    <option value="Ms.">Ms.</option>
-                                    <option value="Dr.">Dr.</option>
-                                    <option value="Prof.">Prof.</option>
+                                <select id="semester" name="semester" style="display: block;" multiple>
+                                    <option value="Data Structures">Data Structures</option>
+                                    <option value="Fundamentals of Algorithms">Fundamentals of Algorithms</option>
+                                    <option value="Software Engineering">Software Engineering</option>
                                 </select>
-
                             </div>
                         </div>
+
 
                         @if(authorizeMessage!= null){
                             <div class="alert alert-primary" role="alert">

@@ -42,8 +42,10 @@ public class UserController extends Controller {
         String password = req.get("password").asText();
 
 
+
         try {
-            User user = User.findByName(username); // ( match where username and password both match )
+            User user = User.findByName(username);
+            // ( match where username and password both match )
             if(user!=null && username.equals(user.username) && password.equals(user.password)){
                 return ok("true");
             }else{

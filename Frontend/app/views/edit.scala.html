@@ -1,0 +1,273 @@
+@(authorizeMessage: String)
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Play Setup Demo</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+            <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    </head>
+    <body>
+
+        <header class="topbar">
+            <h1 class="focused" style="font-size: 37px;
+                color: #57a957">
+                <strong>Edit User Info</strong>
+            </h1>
+        </header>
+
+
+
+        <div class="row">
+            <div class="card col s4 offset-s4 ">
+                <div class="card-panel">
+                    <form action="@routes.User.edit()" method="GET">
+
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="username" name="username" type="text" class="validate" required>
+                                <label for="username">Username</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="password" name="password" type="password" class="validate" required>
+                                <label for="password">Password</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <label for="security">Security Question: What was the name of your first pet?</label>
+                                <br>
+                                <input id="security" name="security" type="password" class="validate" required>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <label for="title">Title</label>
+                                <br>
+                                <br>
+                                <select id="title" name="title" style="display: block;">
+                                    <option value="Mr.">Mr.</option>
+                                    <option value="Mrs.">Mrs.</option>
+                                    <option value="Ms.">Ms.</option>
+                                    <option value="Dr.">Dr.</option>
+                                    <option value="Prof.">Prof.</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="researchArea" name="researchArea" type="text" class="validate">
+                                <label for="researchArea">Research Area</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="firstName" name="firstName" type="text" class="validate" required>
+                                <label for="firstName">First Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="lastName" name="lastName" type="text" class="validate" required>
+                                <label for="lastName">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="position" name="position" type="text" class="validate">
+                                <label for="position">Position</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="affiliation" name="affiliation" type="text" class="validate">
+                                <label for="affiliation">Affiliation</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="email" name="email" type="text" class="validate" required>
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="phone" name="phone" type="text" class="validate" required>
+                                <label for="phone">Phone</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="fax" name="fax" type="text" class="validate">
+                                <label for="fax">Fax</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="address" name="address" type="text" class="validate" required>
+                                <label for="address">Address</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="city" name="city" type="text" class="validate" required>
+                                <label for="city">City</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="country" name="country" type="text" class="validate" required>
+                                <label for="country">Country</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="zip" name="zip" type="text" class="validate" required>
+                                <label for="zip">Zip Code</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
+                                <input id="comment" name="comment" type="text" class="validate" required>
+                                <label for="comment">Comments</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <label for="status">Status</label>
+                                <br>
+                                <br>
+                                <select id="status" name="status" style="display: block;">
+                                    <option value="Student">Student</option>
+                                    <option value="Faculty">Faculty</option>
+                                    <option value="Staff">Staff</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>If student answer the following questions</div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <label for="degree">Current Degree Plan</label>
+                                <br>
+                                <br>
+                                <select id="degree" name="degree" style="display: block;">
+                                    <option value="Ph.D.">Ph.D.</option>
+                                    <option value="D.E.-SE">D.E.-SE</option>
+                                    <option value="MS-CS">MS-CS</option>
+                                    <option value="MS-SE">MS-SE</option>
+                                    <option value="MS-Cybersecurity">MS-Cybersecurity</option>
+                                    <option value="BS-CS">BS-CS</option>
+                                    <option value="BA-CS">BA-CS</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <label for="semester">Starting Semester</label>
+                                <br>
+                                <br>
+                                <select id="semester" name="semester" style="display: block;">
+                                    <option value="Fall">Fall</option>
+                                    <option value="Spring">Spring</option>
+                                    <option value="Summer">Summer</option>
+                                </select>
+                                <br>
+                                <br>
+                                <select id="year" name="year" style="display: block;">
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <label for="month">Graduation</label>
+                                <br>
+                                <br>
+                                <select id="month" name="month" style="display: block;">
+                                    <option value="January">January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                    <option value="October">October</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
+                                </select>
+                                <br>
+                                <br>
+                                <select id="year2" name="year2" style="display: block;">
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                </select>
+                            </div>
+                        </div>
+                        @if(authorizeMessage!= null){
+                            <div class="alert alert-primary" role="alert">
+                            @authorizeMessage
+                            </div>
+                            <br>
+                        }
+
+                        <div class="row">
+                            <button id="api-search-button" class="btn col s4 offset-s4" type="submit">Submit</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -237,6 +237,16 @@ public class User {
         ObjectNode res = Json.newObject();
         res.put("username", this.username);
         res.put("password",this.password);
+        res.put("username", this.username);
+        res.put("firstName", this.firstName);
+        res.put("lastName", this.lastName);
+        res.put("email", this.email);
+        res.put("phone", this.phone);
+        res.put("degree", this.degree);
+        res.put("semester", this.semester);
+        res.put("year", this.year);
+        res.put("month", this.month);
+        res.put("year2", this.year2);
         return request.addHeader("Content-Type", "application/json")
                 .post(res)
                 .thenApply((WSResponse r) -> {
@@ -313,7 +323,7 @@ public class User {
     }
 
     public Result edit() {
-        return ok(views.html.application.render(""));
+        return ok(views.html.edit.render(""));
     }
 
 }

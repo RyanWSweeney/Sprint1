@@ -47,7 +47,7 @@ public class HomeController extends Controller {
     public CompletionStage<Result> loginHandler() {
 
         Form<User> loginForm = formFactory.form(User.class).bindFromRequest();
-        if (loginForm.hasErrors()){
+        if (loginForm.hasErrors()) {
             return (CompletionStage<Result>) badRequest(views.html.login.render(""));  // send parameter like register so that user could know
         }
 
@@ -56,7 +56,7 @@ public class HomeController extends Controller {
                     if (r.getStatus() == 200 && r.asJson() != null && r.asJson().asBoolean()) {
                         System.out.println(r.asJson());
                         // add username to session
-                        session("username",loginForm.get().getUsername());   // store username in session for your project
+                        session("username", loginForm.get().getUsername());   // store username in session for your project
                         // redirect to index page, to display all categories
                         return ok(views.html.index.render("Welcome!!! " + loginForm.get().getUsername()));
                     } else {
@@ -70,7 +70,7 @@ public class HomeController extends Controller {
     public CompletionStage<Result> signupHandler() {
 
         Form<User> registrationForm = formFactory.form(User.class).bindFromRequest();
-        if (registrationForm.hasErrors()){
+        if (registrationForm.hasErrors()) {
             return (CompletionStage<Result>) badRequest(views.html.register.render(null));
         }
         return registrationForm.get().registerUser()
