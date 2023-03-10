@@ -51,8 +51,8 @@ Seq[Any](format.raw/*2.1*/("""    """),format.raw/*3.1*/("""<!DOCTYPE html>
         <div class="row">
             <div class="card col s4 offset-s4">
                 <div class="card-panel">
-                    <a href=""""),_display_(/*23.31*/routes/*23.37*/.User.application()),format.raw/*23.56*/("""">Submit a TA Application</a>
-                    <a href=""""),_display_(/*24.31*/routes/*24.37*/.User.edit()),format.raw/*24.49*/("""">Edit User Details</a>
+                    <a href=""""),_display_(/*23.31*/routes/*23.37*/.HomeController.application()),format.raw/*23.66*/("""">Submit a TA Application</a>
+                    <a href=""""),_display_(/*24.31*/routes/*24.37*/.HomeController.edit()),format.raw/*24.59*/("""">Edit User Details</a>
                 </div>
             </div>
         </div>
@@ -75,10 +75,10 @@ Seq[Any](format.raw/*2.1*/("""    """),format.raw/*3.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2023-03-09T11:25:57.068
+                  DATE: 2023-03-10T13:51:24.167
                   SOURCE: D:/SoftwareEngineering/Sprint1/Frontend/app/views/index.scala.html
-                  HASH: 8572e86896f2a3177b620693cd989c66ce1787f8
-                  MATRIX: 948->1|1038->24|1104->19|1134->62|1705->607|1733->614|1930->784|1945->790|1985->809|2072->869|2087->875|2120->887
+                  HASH: 02d511431eb4eb23493e9304c0abb1e0cd3650e0
+                  MATRIX: 948->1|1038->24|1104->19|1134->62|1705->607|1733->614|1930->784|1945->790|1995->819|2082->879|2097->885|2140->907
                   LINES: 28->1|31->2|34->2|34->3|47->16|47->16|54->23|54->23|54->23|55->24|55->24|55->24
                   -- GENERATED --
               */

@@ -1,5 +1,4 @@
 [debug] Copy resource mappings: 
 [debug] 	(D:\SoftwareEngineering\Sprint1\Frontend\conf\application.conf,D:\SoftwareEngineering\Sprint1\Frontend\target\scala-2.12\classes\application.conf)
-[debug] 	(D:\SoftwareEngineering\Sprint1\Frontend\conf\dependencies.yml,D:\SoftwareEngineering\Sprint1\Frontend\target\scala-2.12\classes\dependencies.yml)
 [debug] 	(D:\SoftwareEngineering\Sprint1\Frontend\conf\logback.xml,D:\SoftwareEngineering\Sprint1\Frontend\target\scala-2.12\classes\logback.xml)
 [debug] 	(D:\SoftwareEngineering\Sprint1\Frontend\conf\routes,D:\SoftwareEngineering\Sprint1\Frontend\target\scala-2.12\classes\routes)

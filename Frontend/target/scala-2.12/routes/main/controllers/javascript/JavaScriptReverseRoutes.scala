@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:D:/SoftwareEngineering/Sprint1/Frontend/conf/routes
-// @DATE:Thu Mar 09 11:25:56 CST 2023
+// @DATE:Fri Mar 10 14:08:01 CST 2023
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -18,6 +18,36 @@ package controllers.javascript {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
+  
+    // @LINE:20
+    def edit2: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.edit2",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "edit2"})
+        }
+      """
+    )
+  
+    // @LINE:18
+    def edit: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.edit",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "edit"})
+        }
+      """
+    )
+  
+    // @LINE:16
+    def application: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.application",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "application"})
+        }
+      """
+    )
   
     // @LINE:10
     def signup: JavaScriptReverseRoute = JavaScriptReverseRoute(
@@ -71,7 +101,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:21
+  // @LINE:23
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -79,42 +109,12 @@ package controllers.javascript {
     }
 
   
-    // @LINE:21
+    // @LINE:23
     def at: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.at",
       """
         function(file1) {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "assets/" + (""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("file", file1)})
-        }
-      """
-    )
-  
-  }
-
-  // @LINE:16
-  class ReverseUser(_prefix: => String) {
-
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:18
-    def edit: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.User.edit",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "edit"})
-        }
-      """
-    )
-  
-    // @LINE:16
-    def application: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.User.application",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "application"})
         }
       """
     )

@@ -1,3 +1,15 @@
-2023-03-10 10:37:39,198 [INFO] from application in ForkJoinPool-1-worker-9 - Creating Pool for datasource 'default'
-2023-03-10 10:37:39,401 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-9 - Database [default] connected at jdbc:mysql://localhost:3306/SPRINT1?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-2023-03-10 10:37:39,923 [INFO] from play.api.Play in ForkJoinPool-1-worker-9 - Application started (Dev)
+2023-03-10 12:35:10,282 [INFO] from application in ForkJoinPool-1-worker-9 - Creating Pool for datasource 'default'
+2023-03-10 12:35:10,453 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-9 - Database [default] connected at jdbc:mysql://localhost:3306/SPRINT1?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2023-03-10 12:35:10,969 [INFO] from play.api.Play in ForkJoinPool-1-worker-9 - Application started (Dev)
+2023-03-10 12:48:57,230 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
+2023-03-10 12:48:57,290 [INFO] from application in application-akka.actor.default-dispatcher-2 - Creating Pool for datasource 'default'
+2023-03-10 12:48:57,314 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-2 - Database [default] connected at jdbc:mysql://localhost:3306/SPRINT1?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2023-03-10 12:48:57,383 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-2 - Application started (Dev)
+2023-03-10 12:58:06,978 [INFO] from application in application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
+2023-03-10 12:58:07,033 [INFO] from application in application-akka.actor.default-dispatcher-3 - Creating Pool for datasource 'default'
+2023-03-10 12:58:07,056 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-3 - Database [default] connected at jdbc:mysql://localhost:3306/SPRINT1?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2023-03-10 12:58:07,120 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-3 - Application started (Dev)
+2023-03-10 13:38:48,524 [INFO] from application in application-akka.actor.default-dispatcher-11 - Shutting down connection pool.
+2023-03-10 13:38:48,590 [INFO] from application in application-akka.actor.default-dispatcher-11 - Creating Pool for datasource 'default'
+2023-03-10 13:38:48,612 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-11 - Database [default] connected at jdbc:mysql://localhost:3306/SPRINT1?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2023-03-10 13:38:48,677 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-11 - Application started (Dev)

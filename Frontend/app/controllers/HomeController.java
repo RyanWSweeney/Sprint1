@@ -92,7 +92,12 @@ public class HomeController extends Controller {
     public Result application() {
         return ok(views.html.application.render("", this.user));
     }
+    public Result edit() {
+        return ok(views.html.edit.render("", this.user));
+    }
 
-
+    public Result edit2() {
+        return ok(views.html.index.render(""));
+    }
 
     }
