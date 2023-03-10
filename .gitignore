@@ -1,0 +1,11 @@
+/backend/logs/
+/backend/project/
+/Frontend/project/
+/Frontend/logs/
+/backend/project/target/
+/.idea/
+/backend/.idea/
+/Frontend/.idea/
+/Backend/logs/
+
+/Frontend/project/
