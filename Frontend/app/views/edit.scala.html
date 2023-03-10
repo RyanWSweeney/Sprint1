@@ -1,4 +1,4 @@
-@(authorizeMessage: String)
+@(authorizeMessage: String, user: User)
 <!DOCTYPE html>
 <html>
     <head>
@@ -29,19 +29,19 @@
         <div class="row">
             <div class="card col s4 offset-s4 ">
                 <div class="card-panel">
-                    <form action="@routes.User.edit()" method="GET">
+                    <form action="@routes.HomeController.edit2()" method="GET">
 
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="username" name="username" type="text" class="validate" required>
+                                <input id="username" name="username" type="text" class="validate" value="@user.getUsername" required>
                                 <label for="username">Username</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="password" name="password" type="password" class="validate" required>
+                                <input id="password" name="password" type="password" class="validate" value="@user.getPassword" required>
                                 <label for="password">Password</label>
                             </div>
                         </div>
@@ -49,7 +49,7 @@
                             <div class="input-field col s12">
                                 <label for="security">Security Question: What was the name of your first pet?</label>
                                 <br>
-                                <input id="security" name="security" type="password" class="validate" required>
+                                <input id="security" name="security" type="password" class="validate" value="@user.getSecurity" required>
 
                             </div>
                         </div>
@@ -59,7 +59,7 @@
                                 <label for="title">Title</label>
                                 <br>
                                 <br>
-                                <select id="title" name="title" style="display: block;">
+                                <select id="title" name="title" style="display: block;" value="@user.getTitle">
                                     <option value="Mr.">Mr.</option>
                                     <option value="Mrs.">Mrs.</option>
                                     <option value="Ms.">Ms.</option>
@@ -72,91 +72,91 @@
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="researchArea" name="researchArea" type="text" class="validate">
+                                <input id="researchArea" name="researchArea" type="text" class="validate" value="@user.getResearchArea">
                                 <label for="researchArea">Research Area</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="firstName" name="firstName" type="text" class="validate" required>
+                                <input id="firstName" name="firstName" type="text" class="validate" required value="@user.getFirstName">
                                 <label for="firstName">First Name</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="lastName" name="lastName" type="text" class="validate" required>
+                                <input id="lastName" name="lastName" type="text" class="validate" required value="@user.getLastName">
                                 <label for="lastName">Last Name</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="position" name="position" type="text" class="validate">
+                                <input id="position" name="position" type="text" class="validate" value="@user.getPosition">
                                 <label for="position">Position</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="affiliation" name="affiliation" type="text" class="validate">
+                                <input id="affiliation" name="affiliation" type="text" class="validate" value="@user.getAffiliation">
                                 <label for="affiliation">Affiliation</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="email" name="email" type="text" class="validate" required>
+                                <input id="email" name="email" type="text" class="validate" required value="@user.getEmail">
                                 <label for="email">Email</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="phone" name="phone" type="text" class="validate" required>
+                                <input id="phone" name="phone" type="text" class="validate" required value="@user.getPhone">
                                 <label for="phone">Phone</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="fax" name="fax" type="text" class="validate">
+                                <input id="fax" name="fax" type="text" class="validate" value="@user.getFax">
                                 <label for="fax">Fax</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="address" name="address" type="text" class="validate" required>
+                                <input id="address" name="address" type="text" class="validate" required value="@user.getAddress">
                                 <label for="address">Address</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="city" name="city" type="text" class="validate" required>
+                                <input id="city" name="city" type="text" class="validate" required value="@user.getCity">
                                 <label for="city">City</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="country" name="country" type="text" class="validate" required>
+                                <input id="country" name="country" type="text" class="validate" required value="@user.getCountry">
                                 <label for="country">Country</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="zip" name="zip" type="text" class="validate" required>
+                                <input id="zip" name="zip" type="text" class="validate" required value="@user.getZip">
                                 <label for="zip">Zip Code</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="comment" name="comment" type="text" class="validate" required>
+                                <input id="comment" name="comment" type="text" class="validate" required value="@user.getComment">
                                 <label for="comment">Comments</label>
                             </div>
                         </div>
@@ -165,7 +165,7 @@
                                 <label for="status">Status</label>
                                 <br>
                                 <br>
-                                <select id="status" name="status" style="display: block;">
+                                <select id="status" name="status" style="display: block;" value="@user.getStatus">
                                     <option value="Student">Student</option>
                                     <option value="Faculty">Faculty</option>
                                     <option value="Staff">Staff</option>
@@ -178,7 +178,7 @@
                                 <label for="degree">Current Degree Plan</label>
                                 <br>
                                 <br>
-                                <select id="degree" name="degree" style="display: block;">
+                                <select id="degree" name="degree" style="display: block;" value="@user.getDegree">
                                     <option value="Ph.D.">Ph.D.</option>
                                     <option value="D.E.-SE">D.E.-SE</option>
                                     <option value="MS-CS">MS-CS</option>
@@ -194,14 +194,14 @@
                                 <label for="semester">Starting Semester</label>
                                 <br>
                                 <br>
-                                <select id="semester" name="semester" style="display: block;">
+                                <select id="semester" name="semester" style="display: block;" value="@user.getSemester">
                                     <option value="Fall">Fall</option>
                                     <option value="Spring">Spring</option>
                                     <option value="Summer">Summer</option>
                                 </select>
                                 <br>
                                 <br>
-                                <select id="year" name="year" style="display: block;">
+                                <select id="year" name="year" style="display: block;" value="@user.getYear">
                                     <option value="2019">2019</option>
                                     <option value="2020">2020</option>
                                     <option value="2021">2021</option>
@@ -222,7 +222,7 @@
                                 <label for="month">Graduation</label>
                                 <br>
                                 <br>
-                                <select id="month" name="month" style="display: block;">
+                                <select id="month" name="month" style="display: block;" value="@user.getMonth">
                                     <option value="January">January</option>
                                     <option value="February">February</option>
                                     <option value="March">March</option>
@@ -238,7 +238,7 @@
                                 </select>
                                 <br>
                                 <br>
-                                <select id="year2" name="year2" style="display: block;">
+                                <select id="year2" name="year2" style="display: block;" value="@user.getYear2">
                                     <option value="2019">2019</option>
                                     <option value="2020">2020</option>
                                     <option value="2021">2021</option>

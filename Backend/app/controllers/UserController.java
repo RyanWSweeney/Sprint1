@@ -23,14 +23,15 @@ public class UserController extends Controller {
         String security = req.get("security").asText();
         try {
             User user = User.findByName(username); // ( match where username and password both match )
+            ObjectNode result = Json.newObject();
             if(user!=null && username.equals(user.username) && security.equals(user.security)){
                 return ok("true");
             }else{
-                return ok("false");
+                return ok(Json.toJson("false"));
             }
         }
         catch (Exception e) {
-            return ok("false");
+            return ok(Json.toJson("false"));
         }
     }
 
@@ -47,13 +48,37 @@ public class UserController extends Controller {
             User user = User.findByName(username);
             // ( match where username and password both match )
             if(user!=null && username.equals(user.username) && password.equals(user.password)){
-                return ok("true");
+                ObjectNode result = Json.newObject();
+                result.put("username", user.username);
+                result.put("password", user.password);
+                result.put("security", user.security);
+                result.put("title", user.Title);
+                result.put("researchArea", user.researchArea);
+                result.put("firstName", user.firstName);
+                result.put("lastName", user.lastName);
+                result.put("position", user.position);
+                result.put("affiliation", user.affiliation);
+                result.put("email", user.email);
+                result.put("phone", user.phone);
+                result.put("fax", user.fax);
+                result.put("address", user.address);
+                result.put("city", user.city);
+                result.put("country", user.country);
+                result.put("zip", user.zip);
+                result.put("comment", user.comments);
+                result.put("status", user.status);
+                result.put("degree", user.degree);
+                result.put("semester", user.semester);
+                result.put("year", user.year);
+                result.put("month", user.month);
+                result.put("year2", user.year2);
+                return ok(result);
             }else{
-                return ok("false");
+                return ok(Json.toJson("false"));
             }
         }
         catch (Exception e) {
-            return ok("false");
+            return ok(Json.toJson("false"));
         }
 
     }

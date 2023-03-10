@@ -15,7 +15,9 @@ GET     /forgotPassword             controllers.HomeController.forgotPassword()
 
 GET   /application                  controllers.HomeController.application()
 
-GET     /edit                       controllers.User.edit()
+GET     /edit                       controllers.HomeController.edit()
+
+GET     /edit2                controllers.HomeController.edit2()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

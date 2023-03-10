@@ -319,12 +319,6 @@ public class User {
                 });
     }
 
-
-
-    public Result edit() {
-        return ok(views.html.edit.render(""));
-    }
-
     public void deserialize(JsonNode node){
         this.username = node.get("username").asText();
         this.password = node.get("password").asText();
